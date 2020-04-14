@@ -1,0 +1,10 @@
+select * from smbms_address;  -- 地址
+select * from smbms_bill;     -- 订单
+select * from smbms_provider; -- 供应商
+select * from smbms_role;     -- 角色
+select * from smbms_user;     -- 用户
+
+/* 修改语句*/
+update smbms_bill set
+billcode='BILL2016_021',productname='白兰地',productunit='瓶',productcount=100.00,totalprice=10000.00,ispayment=2,providerid=1
+where id=50
